@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WB Assessoria</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+    <section class="limite">
+        <div class="nav-links">
+            <a href="#home" class="translate" data-pt="Home" data-en="Home">Home</a>
+            <a href="#processos" class="translate" data-pt="Processos" data-en="Processes">Processos</a>
+            <a href="#services" class="translate" data-pt="Serviços" data-en="Services">Serviços</a>
+        </div>
+        <div class="search-bar">
+            <input type="text" placeholder="Pesquisar..." class="translate" data-pt="Pesquisar..." data-en="Search...">
+            <button type="submit" class="translate" data-pt="Buscar" data-en="Search">Buscar</button>
+        </div>
+        <a href="#account" class="account translate" data-pt="Minha Conta" data-en="My Account">Minha Conta</a>
+        <button onclick="translateSite()" class="translate" data-pt="EN" data-en="PT">EN</button>
+    </section>
+    </nav>
+    
+    <section class="img">
+        <h2 class="subtitulo translate" data-pt="Welcome Brasil" data-en="Welcome Brazil">Welcome Brasil</h2>
+        <a class="ler-mais translate" href="#" data-pt="Ver serviços" data-en="See services">Ver serviços</a>
+    </section>
+
+    <section id="home" class="home">
+        <div class="container">
+            <h2 class="translate" data-pt="WB Assessoria" data-en="WB Advisory">WB Assessoria</h2>
+            <p class="translate" data-pt="A WB Assessoria é uma empresa dedicada a facilitar processos migratórios, oferecendo consultoria especializada e serviços completos para aqueles que desejam viver, trabalhar ou estudar no exterior. Com anos de experiência e uma equipe de especialistas, garantimos um processo tranquilo e eficiente." data-en="WB Advisory is a company dedicated to facilitating migration processes, offering specialized consultancy and complete services for those who wish to live, work, or study abroad. With years of experience and a team of specialists, we ensure a smooth and efficient process."></p>
+        </div>
+    </section>
+
+    <section id="services" class="services">
+        <div class="container">
+            <h2 class="translate" data-pt="Nossos Serviços" data-en="Our Services">Nossos Serviços</h2>
+            <div class="service-cards">
+                <div class="card">
+                    <img src="imagens/consultoria.png" alt="Consultoria Migratória">
+                    <h3 class="translate" data-pt="Consultoria Migratória" data-en="Migration Consultancy">Consultoria Migratória</h3>
+                    <p class="translate" data-pt="Ajudamos você a entender e escolher as melhores opções para seu processo migratório." data-en="We help you understand and choose the best options for your migration process."></p>
+                </div>
+                <div class="card">
+                    <img src="imagens/visto.png" alt="Assessoria de Vistos">
+                    <h3 class="translate" data-pt="Assessoria de Vistos" data-en="Visa Assistance">Assessoria de Vistos</h3>
+                    <p class="translate" data-pt="Auxiliamos na obtenção de diferentes tipos de vistos para vários países." data-en="We assist in obtaining different types of visas for various countries."></p>
+                </div>
+                <div class="card">
+                    <img src="imagens/documentos.png" alt="Legalização de Documentos">
+                    <h3 class="translate" data-pt="Legalização de Documentos" data-en="Document Legalization">Legalização de Documentos</h3>
+                    <p class="translate" data-pt="Oferecemos serviços de tradução e legalização de documentos necessários para imigração." data-en="We offer translation and legalization services for documents required for immigration."></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <h2 class="translate" data-pt="O que nossos clientes dizem" data-en="What our clients say">O que nossos clientes dizem</h2>
+            <div class="testimonial-item">
+                <p class="translate" data-pt='"A WB Assessoria foi essencial para minha mudança para minha chegada ao Brasil. Todo o processo foi conduzido com muito profissionalismo e transparência." - Richard Rios' data-en='"WB Advisory was essential for my move to Brazil. The entire process was conducted with a lot of professionalism and transparency." - Richard Rios'></p>
+            </div>
+            <div class="testimonial-item">
+                <p class="translate" data-pt='"Excelente serviço! A equipe é muito atenciosa e competente. Recomendo a todos que precisam de ajuda com processos migratórios." - James Rodriguez' data-en='"Excellent service! The team is very attentive and competent. I recommend it to everyone who needs help with migration processes." - James Rodriguez'></p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2024 WB Assessoria. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
