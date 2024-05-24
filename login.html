@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            font-family: "Montserrat", sans-serif;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #0A170C;
+        }
+
+        .login-container {
+            display: flex;
+            width: 800px;
+            height: 400px;
+            background-color: #f4f4f4;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .left {
+            width: 50%;
+            background-color: #ffffff;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px 0 0 10px;
+        }
+
+        .left img {
+            width: 80%;
+        }
+
+        .right {
+            width: 50%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        h2 {
+            text-align: center;
+            color: #0A170C;
+            margin-bottom: 20px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            outline: none;
+            margin-bottom: 10px;
+        }
+
+        button[type="submit"] {
+            width: 100%;
+            padding: 10px;
+            border: none;
+            border-radius: 4px;
+            background-color: #0A170C;
+            color: #fff;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #D7A909;
+        }
+
+        .extra-links {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+        }
+
+        .extra-links a {
+            color: #D7A909;
+            text-decoration: none;
+        }
+
+        .social-login {
+            display: flex;
+            justify-content: center;
+            margin-top: 20px;
+        }
+
+        .social-login img {
+            width: 40px;
+            height: 40px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <div class="left">
+            <img src="./imagens/vetor.jpg">
+        </h2>
+        </div>
+        <div class="right">
+            <h2>FAÇA SEU LOGIN</h2>
+            <div class="form-group">
+                <input type="text" placeholder="Nome/Username" id="login">
+            </div>
+            <div class="form-group">
+                <input type="password" placeholder="Senha/Password" id="senha">
+            </div>
+            <div class="form-group">
+                <input type="checkbox" id="remember-me"><label for="remember-me"> Lembrar login</label>
+            </div>
+            <button type="submit" onclick="logar(); return false">Login</button>
+            <div class="extra-links">
+                <a href="#">Esqueceu a Senha?</a>
+            </div>
+            <div class="social-login">
+                <img src="https://img.icons8.com/color/48/000000/facebook.png" alt="Facebook">
+                <img src="https://img.icons8.com/color/48/000000/google-logo.png" alt="Google">
+            </div>
+        </div>
+    </div>
+    <script>
+        function logar() {
+            var login = document.getElementById("login").value;
+            var senha = document.getElementById("senha").value;
+
+            if (login == "admin" && senha == "admin") {
+                alert("Sucesso");
+                location.href = "home.html";
+            } else {
+                alert("Usuário ou senha incorretos");
+            }
+        }
+    </script>
+</body>
+</html>
