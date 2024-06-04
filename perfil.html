@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meu Perfil</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.profile-container {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 400px;
+}
+
+.profile-header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-header h2 {
+    margin-bottom: 5px;
+    font-size: 24px;
+}
+
+.profile-header span {
+    color: #666;
+    font-size: 14px;
+}
+
+.profile-picture {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-picture img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group input, 
+.form-group select {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.form-actions {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-change-password, 
+.btn-save {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.btn-change-password {
+    background-color: #007bff;
+}
+
+.btn-save {
+    background-color: #28a745;
+}
+
+.btn-change-password:hover, 
+.btn-save:hover {
+    opacity: 0.8;
+}
+
+</style>
+<body>
+
+    
+    <nav>
+        <section class="limite">
+            <div class="nav-links">
+                <a href="home.html" class="translate" data-pt="Home" data-en="Home">Home</a>
+                <a href="processos.html" class="translate" data-pt="Processos" data-en="Processes">Processos</a>
+                <a href="servicos.html" class="translate" data-pt="Serviços" data-en="Services">Serviços</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar..." class="translate" data-pt="Pesquisar..." data-en="Search...">
+            </div>
+            <a href="perfil.html" class="account translate" data-pt="Minha Conta" data-en="My Account">Minha Conta</a>
+            <button onclick="translateSite()" class="translate" data-pt="EN" data-en="PT">EN</button>
+        </section>
+        </nav>
+
+        <div class="body">
+    <div class="profile-container">
+        <div class="profile-header">
+            <h2>Meu Perfil</h2>
+            <span>Dados do Usuário</span>
+        </div>
+        <form class="profile-form">
+            <div class="profile-picture">
+                <img src="./imagens/foto.avif" alt="Foto de Perfil">
+            </div>
+            <div class="form-group">
+                <label for="login">Login*</label>
+                <input type="email" id="login" name="login" value="Usuário123">
+            </div>
+            <div class="form-group">
+                <label for="nome">Nome*</label>
+                <input type="text" id="nome" name="nome" value="Usuario Usuario">
+            </div>
+            <div class="form-group">
+                <label for="data-nascimento">Data de Nascimento</label>
+                <input type="date" id="data-nascimento" name="data-nascimento">
+            </div>
+            <div class="form-group">
+                <label for="telefone">Telefone</label>
+                <input type="text" id="telefone" name="telefone" value="+55 11 9000-0000">
+            </div>
+            <div class="form-group">
+                <label for="Nacionalidade">Nacionalidade</label>
+                <input type="text" id="Nacionalidade" name="Nacionalidade" value="Chileno">
+            </div>
+        
+            <div class="form-actions">
+                <button type="button" class="btn-change-password">Alterar senha</button>
+                <button type="submit" class="btn-save">Salvar</button>
+            </div>
+        </form>
+    </div>
+</div>
+</body>
+</html>

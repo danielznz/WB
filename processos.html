@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processos</title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+<style>
+    /* styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: left;
+    color: #333;
+    text-transform: uppercase;
+    margin-top: 2rem;
+    font-size: 3rem;
+    margin-left: 20rem;
+    
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+
+.card {
+    background-color: #D7A909;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+    width: 200px;
+    text-align: center;
+    padding: 20px;
+    transition: .3s;
+    cursor: pointer;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    background-color: #a78200;
+}
+
+.card a {
+    text-decoration: none;
+    color: #333;
+    font-size: 18px;
+}
+
+.migratorio {
+    text-align: justify;
+    color: #666;
+    line-height: 1.6;
+    margin: 20px 0;
+    font-size: 16px;
+    margin-left: 20rem;
+    margin-right: 20rem;
+    font-size: 1.2rem;
+}
+
+.reviews-section {
+    margin: auto;
+    padding: 20px;
+    margin-top: 50px;
+    max-width: 1200px;
+}
+
+.reviews-section h2 {
+    text-align: center;
+    color: #c5c5c5;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+
+.review-card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    margin: 20px 0;
+}
+
+.review-card p {
+    font-size: 16px;
+    line-height: 1.6;
+    color: #555;
+}
+</style>
+
+<body>
+   
+    
+    <nav>
+        <section class="limite">
+            <div class="nav-links">
+                <a href="home.html" class="translate" data-pt="Home" data-en="Home">Home</a>
+                <a href="processos.html" class="translate" data-pt="Processos" data-en="Processes">Processos</a>
+                <a href="servicos.html" class="translate" data-pt="Serviços" data-en="Services">Serviços</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar..." class="translate" data-pt="Pesquisar..." data-en="Search...">
+            </div>
+            <a href="perfil.html" class="account translate" data-pt="Minha Conta" data-en="My Account">Minha Conta</a>
+            <button onclick="translateSite()" class="translate" data-pt="EN" data-en="PT">EN</button>
+        </section>
+        </nav>
+
+        <h1>Processos Migratórios</h1>
+  
+       <p class="migratorio">
+                A WB Assessoria oferece suporte completo em processos migratórios, desde a preparação de documentos até a obtenção de vistos. Os documentos necessários incluem passaportes, certidões, comprovantes de residência e antecedentes criminais. O tempo de processamento varia, mas a WB agiliza o processo garantindo documentação correta e completa. Oferecemos avaliação de perfil, preparação de documentos e acompanhamento contínuo do processo, mantendo nossos clientes informados sobre cada etapa. Confie na WB para tornar seu processo migratório eficiente e tranquilo.
+            </p>
+     
+
+        <div class="container">
+            <div class="card">
+                <a href="iniciar.html">Iniciar Processos</a>
+            </div>
+            <div class="card">
+                <a href="status.html">Acompanhar Processos</a>
+            </div>
+        </div>
+
+        <section class="reviews-section">
+            <div class="review-card">
+                <p>"Graças à WB Assessoria, meu processo de visto foi rápido e sem complicações. A equipe foi extremamente atenciosa e competente." - Juan, Argentina</p>
+            </div>
+            <div class="review-card">
+                <p>"A WB Assessoria me ajudou a obter minha residência no Brasil. A preparação dos documentos foi impecável e o acompanhamento constante." - Valentina, Chile</p>
+            </div>
+            <div class="review-card">
+                <p>"Estou muito satisfeito com os serviços da WB. Eles fizeram toda a diferença no meu processo de migração para o Brasil." - Diego, Peru</p>
+        </section>
+
+        
+    <footer>
+        <p>&copy; 2024 WB Assessoria. Todos os direitos reservados.</p>
+    </footer>
+</body>
+</html>
