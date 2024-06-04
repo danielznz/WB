@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Serviços</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:ital,wght@0,100..900;1,100..900&family=Kanit:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Rubik:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+</head>
+
+
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.services-container {
+    display: flex;
+    gap: 20px;
+}
+
+.service-card {
+    background: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    width: 300px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.service-card h3 {
+    margin-bottom: 15px;
+    font-size: 20px;
+}
+
+.service-card p {
+    margin-bottom: 20px;
+    font-size: 14px;
+    color: #666;
+}
+
+.btn-service {
+    background-color: #11091a;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-bottom: 10px;
+    font-size: 1.25rem;
+}
+
+.btn-service:hover {
+    opacity: 0.8;
+}
+
+.whatsapp-link {
+    color: #005820;
+    text-decoration: none;
+    font-size: 1.1rem
+}
+
+.whatsapp-link:hover {
+    text-decoration: underline;
+}
+</style>
+
+<body>
+    <nav>
+        <section class="limite">
+            <div class="nav-links">
+                <a href="home.html" class="translate" data-pt="Home" data-en="Home">Home</a>
+                <a href="processos.html" class="translate" data-pt="Processos" data-en="Processes">Processos</a>
+                <a href="servicos.html" class="translate" data-pt="Serviços" data-en="Services">Serviços</a>
+            </div>
+            <div class="search-bar">
+                <input type="text" placeholder="Pesquisar..." class="translate" data-pt="Pesquisar..." data-en="Search...">
+            </div>
+            <a href="perfil.html" class="account translate" data-pt="Minha Conta" data-en="My Account">Minha Conta</a>
+            <button onclick="translateSite()" class="translate" data-pt="EN" data-en="PT">EN</button>
+        </section>
+        </nav>
+
+        <div class="body">
+    <div class="services-container">
+        <div class="service-card">
+            <h3>Consultoria Migratória</h3>
+            <img src="/imagens/consultoria.png">
+            <p>Oferecemos serviços de consultoria migratória para ajudá-lo em sua mudança para o Brasil.</p>
+            <button class="btn-service">Solicitar Serviço</button>
+            <a href="https://api.whatsapp.com/send?phone=5511914258886&text=Olá%2C%20Welcome2Brazil!%20Gostaria%20de%20mais%20informações.%20🇧🇷"><img class="btn-rede" src="/imagens/zap.png" height="40px"></a>
+        </div>
+        <div class="service-card">
+            <h3>Assessoria de Vistos</h3>
+            <img src="/imagens/visto.png">
+            <p>Nossa equipe especializada auxilia na obtenção de vistos para diversos países.</p>
+            <button class="btn-service">Solicitar Serviço</button>
+            <a href="https://api.whatsapp.com/send?phone=5511914258886&text=Olá%2C%20Welcome2Brazil!%20Gostaria%20de%20mais%20informações.%20🇧🇷"><img class="btn-rede" src="/imagens/zap.png" height="40px"></a>
+        </div>
+        <div class="service-card">
+            <h3>Legalização de Documentos</h3>
+            <img src="/imagens/documentos.png">
+            <p>Facilitamos o processo de legalização de documentos para uso no exterior.</p>
+            <button class="btn-service">Solicitar Serviço</button>
+            <a href="https://api.whatsapp.com/send?phone=5511914258886&text=Olá%2C%20Welcome2Brazil!%20Gostaria%20de%20mais%20informações.%20🇧🇷"><img class="btn-rede" src="/imagens/zap.png" height="40px"></a>
+        </div>
+    </div>
+</div>
+</body>
+</html>
