@@ -1,0 +1,49 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.nav-tool{
+    text-align: left;
+    background-color: rgb(255, 255, 255);
+    margin: 0;
+    padding: 1px;
+}
+
+.nav h2{
+    margin: 0;
+    margin-left: 10rem;
+    font-size: 1rem;
+    font-family: "Montserrat", sans-serif;
+}
+
+.home h1{
+    font-family: "Montserrat", sans-serif;
+    margin-left: 10rem;
+    font-size: 3rem;
+    font-weight: 800;
+}
+
+span{
+    font-size: 5rem;
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+
+}
+
+
+.wallpaper {
+    display: none; /* A imagem de wallpaper será usada como background e não precisa ser exibida diretamente */
+}
+.home::before {
+    content: '';
+    background: url('/imagens/wallp.jpg') no-repeat center center/cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    opacity: 0.8; 
+}
+
